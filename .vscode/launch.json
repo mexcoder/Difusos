@@ -2,6 +2,7 @@
 
     "version": "0.2.0",
     "configurations": [
+
         {
             "name": "generalized bell preview",
             "type": "python",
@@ -16,6 +17,15 @@
             "type": "python",
             "request": "launch",
             "module": "Difusos.main",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/.."
+        },
+
+        {
+            "name": "gui",
+            "type": "python",
+            "request": "launch",
+            "module": "Difusos.gui",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/.."
         }

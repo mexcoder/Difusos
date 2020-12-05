@@ -9,6 +9,13 @@ class NetworkRule(object):
         self._q = q
         pass
 
+    def getProperties(self):
+        # TODO: dinamically get all properties
+        return [("p", self.__class__.p), 
+                ("q", self.__class__.q),
+                ("d", self.__class__.d),
+                ("m", self.__class__.m)]
+
     @property
     def membershipFunction(self):
         return self._membershipFunction
@@ -19,7 +26,7 @@ class NetworkRule(object):
 
     @p.setter
     def p(self, value):
-        self._p
+        self._p = value
 
     @property
     def q(self):
@@ -27,7 +34,7 @@ class NetworkRule(object):
     
     @q.setter
     def q(self, value):
-        self._q
+        self._q = value
     
 
     @property

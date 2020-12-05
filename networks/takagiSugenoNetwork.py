@@ -1,6 +1,5 @@
 from .networkInterface import NetworkInterface
 from .networkRule import NetworkRule
-
 class TakagiSugenoNetwork(NetworkInterface):
 
     def __init__(self, rules:[NetworkRule]):
