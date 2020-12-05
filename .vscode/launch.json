@@ -1,0 +1,23 @@
+{
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "generalized bell preview",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/preview.py",
+            "args": ["--function", "gBell"],
+            "console": "integratedTerminal"
+        }
+
+        {
+            "name": "tsn",
+            "type": "python",
+            "request": "launch",
+            "module": "Difusos.main",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/.."
+        }
+    ]
+}
